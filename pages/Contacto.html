@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Charmonman&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>  Bitácora de viaje - Contacto </title>
+</head>
+<body>
+    <header> 
+        <section class="header__section">
+            <img class="header__logo" src="../resources/mundo.png">
+            <h1 class="header__title"> Bitácora de viaje </h1> <!-- Título principal, INCLUYE LOGO  -->
+            <h1 class="header__subtitle"> By Milenajaz </h1>
+        </section>
+        <nav class="header__navegacion">  <!-- Lista de páginas navegables -->
+            <ul class="header__lista">
+				<li class="header__item"><a href="../index.html">Home</a></li>
+				<li class="header__item"><a href="BRASIL.html">Brasil</a></li>
+				<li class="header__item"><a href="MEXICO.html">México</a></li>
+				<li class="header__item"><a href="NYC.html">New York</a></li>
+                <li class="header__item"><a href="#">Contacto</a></li>
+			</ul>
+        </nav>
+    </header> 
+    <main>
+        <section>
+            <h2 class="main__contacttitle"> Suscribite a nuestro Newsletter</h2>
+        </section>
+        <section>
+            <article class="article__forum">
+                <form action="#">
+                    <label for="name">Tu nombre:
+                        <input type="text" placeholder="Decinos tu nombre"><br>
+                    </label>
+                    <label for="email"> Tu Correo:
+                        <input type="email" placeholder="aaa@gmail.com" name="email"><br>
+                    </label>
+                    <label for="Comentarios">Comentarios:<br>
+                        <textarea placeholder="Dejanos algún comentario. Contanos a dónde viajaste, qué te gustaría que añadiéramos al blog"></textarea>
+                    </label> <br>
+                    <div>
+                        <p> ¿Sobre qué te gustaría recibir más info?</p>
+                        <div>Medidas COVID Argentina
+                            <input type="radio" name="info" value="Medidas COVID Argentina">
+                        </div>
+                        <div>Mejores lugares para salir de fiesta en Cancún
+                            <input type="radio" name="info" value="Mejores lugares para salir de fiesta en Cancún">
+                        </div>
+                        <div> Time Warp Brasil 2023
+                            <input type="radio" name="info" value="Time Warp Brasil 2023">
+                        </div>
+                        <div> Qué ver en Nueva York en una semana
+                            <input type="radio" name="info" value="Qué ver en Nueva York en una semana">
+                        </div>
+                    </div>
+                    <p>¿Qué destinos preferís? Tenemos destinos únicos para recomendarte </p>
+                    <select name="destino" id="destino"> 
+                        <option value="playa">Playa</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="ciudad">Ciudad</option>
+                        <option value="Mundial">Quiero ver todas las opciones</option>
+                        <option value="none">-</option>
+                    </select>
+                    <div>Quiero recibir el newsletter mensual
+                    <input type="checkbox" name="acepta" value="1"></div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Inicio del footer -->
+        <section class="footer__redsocial"> 
+            <h2 class="footer__title"> Buscanos en redes </h2>
+            <a href="https://www.facebook.com/milenajazm"> <img class="footer__redes" src="../resources/facebook-square-brands.svg"></a>
+            <a href="https://www.instagram.com/milenajaz/?hl=es"><img class="footer__redes" src="../resources/instagram-brands.svg"></a>
+        </section>
+        <section class="footer__contacto">
+            <h2 class="footer__title"><a href="Contacto.html">Contactanos </a></li></h2>
+        </section>
+        <p class="footer__derechos"> Todos los derechos reservados 2022 </p> <!-- agregar class -->
+    </footer>
+</body>
+</html>
