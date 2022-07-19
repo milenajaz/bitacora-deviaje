@@ -23,7 +23,7 @@ header {
 .header__title { /* encabezado, posicionar en el centro */
     font-family: 'Amatic SC', cursive;
     font-size: 120px;
-    color:#060c64;
+    color:#06641d;
     display: inline;
 }
 
