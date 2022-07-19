@@ -3,34 +3,47 @@
     padding:0px; 
 }
 header {
-    background-color: rgb(247, 222, 156);
+    background-color: rgb(253, 233, 173);
     width: 100vw;
 }
 
 /* logo y titulo HEADER  */
 
 .header__section {
-    height: 190px;
+    height: 170px;
     display: flex;
     justify-content: center;
+    margin-right: 100px;
 }
 
 .header__logo {  /* posicionar en el centro */
     height: 170px;
     display: inline;
+
+}
+
+.header__logo:hover{
+    transform: rotate(10deg);
+    transition: all 5s;
 }
 
 .header__title { /* encabezado, posicionar en el centro */
     font-family: 'Amatic SC', cursive;
-    font-size: 120px;
+    font-size: 100px;
     color:#06641d;
     display: inline;
 }
 
+.header__title:hover{
+    transform: translate(0px,15px);
+    transition: all 2s;
+}
+
 .header__subtitle { /* subtitulo, posicionar en el centro*/
     font-family: 'Sacramento', cursive;
-    font-size: 30px;
+    font-size: 25px;
     color:#06641d;
+    padding: 100px 0px 0px 0px;
 }
 
 
@@ -58,6 +71,7 @@ header {
 /* COLOR VÍNCULOS  */
 a{
     color: #06641d;
+    text-decoration:none
 }
 a:hover{
     color: #06641d
@@ -72,7 +86,7 @@ a:visited{
 /* INICIO DEL MAIN */
 main {
     font-family: 'Rubik', sans-serif;
-    background-color: rgb(247, 222, 156);
+    background-color: rgb(253, 233, 173);
     width: 100vw;
 }
 
@@ -87,9 +101,8 @@ main {
                         "centralpark playagrande cenote"
                         "brooklyn chichen timewarp"
                         "brooklyn chichen timewarp";
-    row-gap: 10px;
-    column-gap: 10px;
-    border: #e4b269 solid 1px;
+    row-gap: 5px;
+    column-gap: 5px;
     padding: 10px;
 }
 
@@ -101,6 +114,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.brasil:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 .playagrande {
@@ -109,6 +128,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.playagrande:hover{
+    transform: scale(1.05 , 1.05);
+    transition: all 2s;
 }
 
 .nuevayork{
@@ -117,6 +142,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.nuevayork:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 .cenote{
@@ -125,6 +156,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.cenote:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 .mexico{
@@ -133,6 +170,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.mexico:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 .centralpark{
@@ -141,6 +184,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.centralpark:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 
@@ -150,6 +199,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.brooklyn:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 .chichen{
@@ -158,6 +213,12 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+}
+
+.chichen:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
 }
 
 .timewarp{
@@ -166,8 +227,14 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: #e4b269 solid 3px;
+    transition: all 2s;
 }
 
+.timewarp:hover{
+    transform: scale(1.05,1.05);
+    transition: all 2s;
+}
 
 
 .main__titulopais { /* título país  */
@@ -333,33 +400,31 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
 footer {
     font-family: 'Rubik', sans-serif;
     background-color: #e4b269;
-    border: 2px solid #06641d
+    border: 1px solid #06641d;
+    width: 100vw;
 }
 
 /* SECCIONES DEL FOOTER  */
 .footer__redsocial {
-    height: 120px;
-    font-size: 17px;
+    height: 85px;
+    font-size: 15px;
 }
 
 .footer__title {
     color:#06641d;
-    margin-left: 10px;
-    margin-top: 10px;
     padding: 10px;
+    font-size: 20px;
 }
 
 /* LOGO REDES */
 .footer__redes {
-    width: 40px;
-    padding: 10px;
-    margin-left: 10px;
+    width: 25px;
+    padding: 10px 5px 0px 10px;
 }
 
 .footer__contacto {
-    height: 50px;
-    margin-left: 0px;
-    padding: 10px;
+    height: 40px;
+    padding: 10px 5px 10px 0px;
 }
 
 .footer__derechos {
