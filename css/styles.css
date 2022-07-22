@@ -2,22 +2,21 @@
     margin: 0px;
     padding:0px; 
 }
-header {
+
+/*  INICIO HEADER */
+.header {
     background-color: rgb(253, 233, 173);
-    width: 100vw;
 }
 
 /* logo y titulo HEADER  */
 
 .header__section {
-    height: 170px;
     display: flex;
     justify-content: center;
-    margin-right: 100px;
 }
 
 .header__logo {  /* posicionar en el centro */
-    height: 170px;
+    height: 140px;
     display: inline;
 
 }
@@ -28,10 +27,11 @@ header {
 }
 
 .header__title { /* encabezado, posicionar en el centro */
-    font-family: 'Amatic SC', cursive;
-    font-size: 100px;
+    font-family: 'Sacramento', cursive;
+    font-size: 90px;
     color:#06641d;
     display: inline;
+    margin-top: 20px;
 }
 
 .header__title:hover{
@@ -41,31 +41,32 @@ header {
 
 .header__subtitle { /* subtitulo, posicionar en el centro*/
     font-family: 'Sacramento', cursive;
-    font-size: 25px;
+    font-size: 30px;
     color:#06641d;
     padding: 100px 0px 0px 0px;
 }
 
+/*  NAVEGACION  */
 
-.header__navegacion {/* lista menú */
-    border: 2px solid #06641d;
+.header__navegacion { /* navegacion + lista + item   */
+    border: 1px solid #06641d;
     background-color: #e4b269;
     padding: 1px;
 }
 
-.header__lista {
+/* .header__lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    list-style:none;
-    margin-left: 300px;
-    margin-right: 300px;
-}
+    list-style:none; */
+/*     margin-left: 300px;
+    margin-right: 300px; */
+
 
 .header__item { /* lista menú */
     font-family: 'Rubik', sans-serif;
-    font-size: 25px;
-    padding: 10px 15px;
+    font-size: 20px;
+    padding: 5px 10px;
 }
 
 /* COLOR VÍNCULOS  */
@@ -87,7 +88,8 @@ a:visited{
 main {
     font-family: 'Rubik', sans-serif;
     background-color: rgb(253, 233, 173);
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* BLOQUE HOME */
@@ -362,7 +364,7 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
 
 .article__parrafo { /* TEXTO DE ARTICULO TIP */
     font-size: 17px;
-    width: 450px;
+    width: 420px;
     word-spacing: 1px;
     line-height: 20px;
     text-align: left;
@@ -388,12 +390,44 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
 
 /* FORMULARIO */
 .article__forum {
-    width: 600px;
+    width: 550px;
     background-color: #e4b269;
     margin: 50px;
-    padding: 50px;
+    padding: 20px;
 }
 
+.forum__subtitle {
+    font-size: 20px;
+    width: 500px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 30px 10px 20px 0px
+}
+
+.carousel__altura {
+    width: 500px;
+    height: 900px;
+}
+
+.article__parrafonyc { /* TEXTO DE ARTICULO TIP */
+    display: flex;
+    font-size: 17px;
+    width: 450px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.mapanyc{
+    margin-top: 20px;
+    padding:10px;
+    width: 950px;
+    height: 250px;
+}
 
 
 /*  COMIENZO DEL FOOTER */
@@ -434,7 +468,11 @@ footer {
 
 
 /* MEDIA DE CELULAR */
-@media (min-width: px) and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 575px){
+    .header__logo {  /* posicionar en el centro */
+        height: 0px;
+    
+    }
     .header__lista {
         flex-direction: column;
         flex-grow: 0;
@@ -464,6 +502,41 @@ footer {
                             "timewarp";
 }
 
+/* FORMULARIO */
+.article__forum {
+    width: 100%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.forum__subtitle {
+    font-size: 20px;
+    width: 500px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 30px 10px 20px 0px;
+}
+
+.article__parrafonyc { /* TEXTO DE ARTICULO TIP */
+    display: flex;
+    font-size: 17px;
+    width: 450px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mapanyc{
+    margin-top: 20px;
+    padding:10px;
+    width: 200px;
+    height: 300px;
+}
 
 footer{
     flex-direction: column;
@@ -474,6 +547,10 @@ footer{
 
 /*  media querie TABLA */
 @media (min-width: 576px) and (max-width: 992px){
+    .header__logo {  /* posicionar en el centro */
+        height: 0px;
+    }
+
     .main__index {   /* productos grid */
         height: auto;
         grid-template-columns: 1fr 1fr 1fr;
@@ -482,5 +559,21 @@ footer{
                             "playagrande centralpark cenote"
                             "brooklyn chichen timewarp";
     }
+/* FORMULARIO */
+.article__forum {
+    width: 550px;
+    background-color: #e4b269;
+    margin: 50px;
+    padding: 20px;
+}
+
+.forum__subtitle {
+    font-size: 20px;
+    width: 500px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 30px 10px 20px 0px
+}
 }
 }

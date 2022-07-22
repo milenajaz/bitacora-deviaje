@@ -15,72 +15,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>  Bitácora de viaje - Contacto </title>
 </head>
 <body>
-    <header> 
+    <header class="header"> 
         <section class="header__section">
             <img class="header__logo" src="../resources/mundo.png">
             <h1 class="header__title"> Bitácora de viaje </h1> <!-- Título principal, INCLUYE LOGO  -->
             <h1 class="header__subtitle"> By Milenajaz </h1>
         </section>
-        <nav class="header__navegacion">  <!-- Lista de páginas navegables -->
-            <ul class="header__lista">
-				<li class="header__item"><a href="../index.html">Home</a></li>
-				<li class="header__item"><a href="BRASIL.html">Brasil</a></li>
-				<li class="header__item"><a href="MEXICO.html">México</a></li>
-				<li class="header__item"><a href="NYC.html">New York</a></li>
-                <li class="header__item"><a href="#">Contacto</a></li>
-			</ul>
+        <nav class="navbar navbar-expand-lg header__navegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__lista">
+                        <li class="nav-item header__item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="BRASIL.html">Brasil</a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="MEXICO.html">Mexico</a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="NYC.html">New York</a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>  <!-- recordar agregar numeral en cada pagina -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header> 
     <main>
         <section>
             <h2 class="main__contacttitle"> Suscribite a nuestro Newsletter</h2>
         </section>
-        <section>
-            <article class="article__forum">
-                <form action="#">
-                    <label for="name">Tu nombre:
-                        <input type="text" placeholder="Decinos tu nombre"><br>
-                    </label>
-                    <label for="email"> Tu Correo:
-                        <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-                    </label>
-                    <label for="Comentarios">Comentarios:<br>
-                        <textarea placeholder="Dejanos algún comentario. Contanos a dónde viajaste, qué te gustaría que añadiéramos al blog"></textarea>
-                    </label> <br>
-                    <div>
-                        <p> ¿Sobre qué te gustaría recibir más info?</p>
-                        <div>Medidas COVID Argentina
-                            <input type="radio" name="info" value="Medidas COVID Argentina">
-                        </div>
-                        <div>Mejores lugares para salir de fiesta en Cancún
-                            <input type="radio" name="info" value="Mejores lugares para salir de fiesta en Cancún">
-                        </div>
-                        <div> Time Warp Brasil 2023
-                            <input type="radio" name="info" value="Time Warp Brasil 2023">
-                        </div>
-                        <div> Qué ver en Nueva York en una semana
-                            <input type="radio" name="info" value="Qué ver en Nueva York en una semana">
-                        </div>
-                    </div>
-                    <p>¿Qué destinos preferís? Tenemos destinos únicos para recomendarte </p>
-                    <select name="destino" id="destino"> 
-                        <option value="playa">Playa</option>
-                        <option value="montaña">Montaña</option>
-                        <option value="ciudad">Ciudad</option>
-                        <option value="Mundial">Quiero ver todas las opciones</option>
-                        <option value="none">-</option>
-                    </select>
-                    <div>Quiero recibir el newsletter mensual
-                    <input type="checkbox" name="acepta" value="1"></div>
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar formulario">
-                </form>
-            </article>
+        <section class="article__forum mx-auto">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> Contanos alguna experiencia, dejanos tu comentario</textarea>
+            </div>
+            <div class="form-check">
+                <p class="forum__subtitle"> ¿Sobre qué te gustaría recibir más info?</p>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                Mejores lugares para salir de fiesta en Cancún
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                Time Warp Brasil 2023
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                Qué ver en Nueva York en una semana
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                Medidas COVID Argentina
+                </label>
+            </div>
+            <div>
+                <p class="forum__subtitle">¿Qué destinos preferís? Tenemos destinos únicos para recomendarte </p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Playa</option>
+                    <option value="2">Montaña</option>
+                    <option value="3">Ciudad</option>
+                    <option value="3">Quiero ver todas las opciones</option>
+                    <option value="3">-</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <p class="forum__subtitle"></p>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                Quiero recibir el newsletter mensual
+                </label>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Enviar Formulario</button>
+                </div> 
         </section>
     </main>
     <footer> <!-- Inicio del footer -->
@@ -94,5 +128,7 @@
         </section>
         <p class="footer__derechos"> Todos los derechos reservados 2022 </p> <!-- agregar class -->
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

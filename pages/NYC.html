@@ -15,35 +15,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>  New York - Bitácora de Viaje </title>
 </head>
 <body>
-    <header> 
+    <header class="header"> 
         <section class="header__section">
             <img class="header__logo" src="../resources/mundo.png">
             <h1 class="header__title"> Bitácora de viaje </h1> <!-- Título principal, INCLUYE LOGO  -->
             <h1 class="header__subtitle"> By Milenajaz </h1>
         </section>
-        <nav class="header__navegacion">  <!-- Lista de páginas navegables -->
-            <ul class="header__lista">
-				<li class="header__item"><a href="../index.html">Home</a></li>
-				<li class="header__item"><a href="BRASIL.html">Brasil</a></li>
-				<li class="header__item"><a href="MEXICO.html">México</a></li>
-				<li class="header__item"><a href="#">New York</a></li>
-                <li class="header__item"><a href="Contacto.html">Contacto</a></li>
-			</ul>
+        <nav class="navbar navbar-expand-lg header__navegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__lista">
+                        <li class="nav-item header__item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="BRASIL.html">Brasil</a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="MEXICO.html">Mexico</a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="#">New York</a>
+                        </li>
+                        <li class="nav-item header__item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>  <!-- recordar agregar numeral en cada pagina -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>   
     <main> 
         <h2 class="main__titulopais"> New York </h2>
         <section>
-            <h3 class="main__titulociudad"> Midtown Manhattan </h3> <!-- título ciudad, fotos, info -->
-            <img class="main__img-medium" src="../resources/midtownnyc.jpg" alt="Nueva York">
-            <p> Central Park, escenario de numerosas películas y series, es uno de los parques urbanos más grandes del mundo y uno de los símbolos indiscutibles de Nueva York. </p>
-            <p> En las 340 hectáreas que ocupa Central Park encontraréis praderas, lagos artificiales, cascadas y zonas que parecen un auténtico bosque. Dentro del propio parque también se encuentra el Zoo de Central Park y otras atracciones.</p>
-            <iframe class="main__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987584510595!3d40.69767006338158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1655774220784!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 class="main__titulociudad"> Manhattan - Brooklyn </h3> <!-- título ciudad, fotos, info -->
+            <div id="carouselExampleInterval" class="carousel slide mx-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../resources/nyc.jpg" class="h-50 carousel__altura d-block w-100" alt="Ciudad de Nueva York">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../resources/nyc2.jpg" class="h-50 carousel__altura d-block w-100" alt="Nueva York de día">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../resources/nyc3.jpg" class="h-50 carousel__altura d-block w-100" alt="NYC">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../resources/midtownnyc.jpg" class="h-50 carousel__altura d-block w-100" alt="Nueva York">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm mb-2 article__parrafonyc">Nueva York se ha convertido en los últimos años y por méritos propios en la capital económica y cultural más importante del mundo. La ciudad ofrece un ambiente y un estilo de vida único difíciles de explicar en una guía de Nueva York, hay que vivirlo y disfrutarlo.</div>
+                    <div class="col-sm mb-2 article__parrafonyc">Asistir a un musical en Broadway, pasar una noche en Times Square, recorrer de un lado a otro el Puente de Brooklyn, disfrutar de una tarde de compras en la Quinta Avenida o sentirte como un broker en Wall Street, son algunas de las cosas que sólo se pueden hacer en Nueva York.</div>
+                    <div class="col-sm mb-2 article__parrafonyc">Manhattan es el “borough” más famoso de Nueva York. Se trata del barrio más visitado de la ciudad, todo un icono, y es tan conocido que muchos confunden Nueva York con Manhattan.</div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <iframe class="mapanyc align-self-center" src="https://www.google.com/maps/d/embed?mid=1jRKA6uv__Wz2Gmo8qX_qctWRgm8&ehbc=2E312F"></iframe>
+                    </div>
+                </div>
         </section>
         </main>
     <footer> <!-- Inicio del footer -->
@@ -57,5 +110,7 @@
         </section>
         <p class="footer__derechos"> Todos los derechos reservados 2022 </p> <!-- agregar class -->
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
