@@ -658,7 +658,7 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
 footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 .footer__redsocial {
@@ -670,9 +670,10 @@ footer{
 .footer__title {
     display: flex;
     justify-content: center;
-    color:#06641d;
     padding: 5px;
     font-size: 20px;
+    width: 100vw;
+    height: 40px;
 }
 
 /* LOGO REDES */
@@ -685,6 +686,7 @@ footer{
 }
 
 .footer__contacto {
+    width: 100vw;
     height: 40px;
     padding: 5px;
 }
@@ -692,15 +694,17 @@ footer{
 .footer__derechos {
     display: flex;
     justify-content:center;
+    width: 100vw;
 }
 
 .parrafo_derechos { /* TEXTOS DESCRIPTIVOS E INFO */
-    font-size: 15px;
-    width: 400px;
+    font-size: 10px;
+    width: 250px;
+    height: 20px;
     word-spacing: 1px;
     line-height: 10px;
-    text-align: center;
-    padding: 5px
+    padding: 1px;
+    margin: 1px;
 }
 
 /*  media querie TABLA */
