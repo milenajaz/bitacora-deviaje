@@ -405,6 +405,12 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
     padding: 30px 10px 20px 0px
 }
 
+.boton_forum{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+
 .carousel__altura {
     width: 500px;
     height: 900px;
@@ -440,20 +446,20 @@ footer {
 
 /* SECCIONES DEL FOOTER  */
 .footer__redsocial {
-    height: 85px;
+    height: 75px;
     font-size: 15px;
 }
 
 .footer__title {
     color:#06641d;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* LOGO REDES */
 .footer__redes {
-    width: 25px;
-    padding: 10px 5px 0px 10px;
+    width: 70px;
+    padding: 10px 5px 0px 20px;
 }
 
 .footer__contacto {
@@ -462,25 +468,47 @@ footer {
 }
 
 .footer__derechos {
-    text-align: left;
-    padding: 0px 20px 20px 10px;
+    display: flex;
+    padding: 10px;
 }
 
 
 /* MEDIA DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px){
-    .header__logo {  /* posicionar en el centro */
+    .header__logo {  
         height: 0px;
-    
     }
+
+    .header__title { /* encabezado, posicionar en el centro */
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .header__subtitle { /* subtitulo, posicionar en el centro*/
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 20px 0px 0px 0px;
+    }
+    
     .header__lista {
+        display: flex;
         flex-direction: column;
         flex-grow: 0;
-        justify-content: center;
     }
     
+    .header__item { /* lista menú */
+        font-size: 20px;
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
     .header__navegacion{
-        flex-direction: column;;
+        display: flex;
+        justify-content: center;
     }
     .header__section{
         flex-direction: column;
@@ -488,7 +516,7 @@ footer {
     }
 
     .main__index {   /* productos grid */
-        height: auto;
+        height: 1500px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr);
         grid-template-areas:"brasil"
@@ -502,20 +530,90 @@ footer {
                             "timewarp";
 }
 
+.main__titulopais { /* título país  */
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.main__titulociudad { /* título ciudad */
+    font-size: 20px;
+    padding: 10px 10px 10px 30px;
+}
+
+p { /* TEXTOS DESCRIPTIVOS E INFO */
+    font-size: 15px;
+    width: 300px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.main__img-mediumtip {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.main__maps {
+    height: 300px;
+    width: 320px;
+    padding: 10px;
+}
+
+.article__tip {  /* BLOQUE DE ARTICULO */
+    width: 320px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: center;
+}
+
+.article__imgtip{ /* IMAGEN DE ARTICULO TIP */
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.article__parrafo { /* TEXTO DE ARTICULO TIP */
+    font-size: 15px;
+    width: 280px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.article__maps {
+    height: 200px;
+    width: 290px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
 /* FORMULARIO */
 .article__forum {
     width: 100%;
-    margin: 50px;
-    padding: 20px;
+    margin: 10px;
+    padding: 15px;
 }
 
 .forum__subtitle {
     font-size: 20px;
-    width: 500px;
+    width: 350px;
     word-spacing: 1px;
     line-height: 20px;
-    text-align: left;
-    padding: 30px 10px 20px 0px;
+    text-align: center;
+    padding: 10px 10px 10px 0px;
 }
 
 .article__parrafonyc { /* TEXTO DE ARTICULO TIP */
@@ -538,14 +636,52 @@ footer {
     height: 300px;
 }
 
+.main__contacttitle {
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+
+/* * SECCIONES DEL FOOTER  */
 footer{
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.footer__redsocial {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__title {
+    display: flex;
+    justify-content: center;
+    color:#06641d;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* LOGO REDES */
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.footer__contacto {
+    height: 40px;
+    padding: 5px;
+}
+
 .footer__derechos {
-    text-align: left;
-    padding: 0px 20px 20px 10px;
+    display: flex;
+    justify-content:center;
+    margin-left: 35px;
 }
 
 
