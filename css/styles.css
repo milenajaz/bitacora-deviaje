@@ -272,6 +272,15 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
     padding: 20px 20px 20px 20px;
 }
 
+p { /* TEXTOS DESCRIPTIVOS E INFO */
+    font-size: 19px;
+    width: 600px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    padding: 30px
+}
+
 .main__maps {
     height: 400px;
     width: 600px;
@@ -309,14 +318,6 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
     margin-left: 10px;
 }
 
-p { /* TEXTOS DESCRIPTIVOS E INFO */
-    font-size: 19px;
-    width: 600px;
-    word-spacing: 1px;
-    line-height: 20px;
-    text-align: center;
-    padding: 30px
-}
 
 .main__maps {
     height: 400px;
@@ -441,25 +442,28 @@ footer {
     font-family: 'Rubik', sans-serif;
     background-color: #e4b269;
     border: 1px solid #06641d;
-    width: 100vw;
 }
 
 /* SECCIONES DEL FOOTER  */
 .footer__redsocial {
-    height: 75px;
-    font-size: 15px;
+    height: 60px;
+    font-size: 40px;
+    padding: 5px;
 }
 
 .footer__title {
     color:#06641d;
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
 }
 
 /* LOGO REDES */
 .footer__redes {
     width: 70px;
-    padding: 10px 5px 0px 20px;
+    height: 50px;
+    padding: 0px 5px 0px 20px;
 }
 
 .footer__contacto {
@@ -472,6 +476,14 @@ footer {
     padding: 10px;
 }
 
+.parrafo_derechos { /* TEXTOS DESCRIPTIVOS E INFO */
+    font-size: 20px;
+    width: 400px;
+    word-spacing: 1px;
+    line-height: 10px;
+    text-align: left;
+    padding: 5px
+}
 
 /* MEDIA DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px){
@@ -661,7 +673,6 @@ footer{
     color:#06641d;
     padding: 5px;
     font-size: 20px;
-    margin-left: 10px;
 }
 
 /* LOGO REDES */
@@ -681,9 +692,16 @@ footer{
 .footer__derechos {
     display: flex;
     justify-content:center;
-    margin-left: 35px;
 }
 
+.parrafo_derechos { /* TEXTOS DESCRIPTIVOS E INFO */
+    font-size: 15px;
+    width: 400px;
+    word-spacing: 1px;
+    line-height: 10px;
+    text-align: center;
+    padding: 5px
+}
 
 /*  media querie TABLA */
 @media (min-width: 576px) and (max-width: 992px){
