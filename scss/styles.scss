@@ -1,0 +1,421 @@
+@import "variables";
+@import "footer";
+@import "mediaqueries";
+
+
+*{
+    margin: 0px;
+    padding:0px; 
+}
+
+/*  INICIO HEADER */
+header {
+    background-color: $color-principal;
+
+    .header { 
+    /* logo y titulo HEADER  */
+
+        &__section {
+        display: flex;
+        justify-content: center;
+        }
+
+        &__logo {   
+            height: 140px;
+            display: inline;
+        }
+
+        &__logo:hover{
+            transform: rotate(10deg);
+            transition: all 5s;
+        }
+
+        &__title { /* encabezado, posicionar en el centro */
+            font-family: 'Sacramento', cursive;
+            font-size: 90px;
+            color:#06641d;
+            display: inline;
+            margin-top: 20px;
+        }
+
+        &__title:hover{
+            transform: translate(0px,15px);
+            transition: all 2s;
+        }
+
+        &__subtitle { /* subtitulo, posicionar en el centro*/
+            font-family: 'Sacramento', cursive;
+            font-size: 30px;
+            color:#06641d;
+            padding: 100px 0px 0px 0px;
+        }
+
+        /*  NAVEGACION  */
+
+        &__navegacion { /* navegacion + lista + item   */
+            border: 1px solid #06641d;
+            background-color: #e4b269;
+            padding: 1px;
+        }
+
+        &__item { /* lista menú */
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+
+/* COLOR VÍNCULOS  */
+a{
+    color: #06641d;
+    text-decoration:none
+
+    .a {
+        &:hover{
+            color: #06641d
+        }
+        &:active{
+            color: #06641d
+        }
+        &:visited{
+            color: #06641d
+        }
+    }
+}
+
+/* INICIO DEL MAIN */
+main {
+    font-family: 'Rubik', sans-serif;
+    background-color: $color-principal;
+    width: 100%;
+    overflow-x: hidden;
+
+    .main {
+    /* BLOQUE HOME */
+        &__index {   /* productos grid */
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"brasil nuevayork mexico"
+                                "brasil playagrande mexico"
+                                "centralpark playagrande cenote"
+                                "brooklyn chichen timewarp"
+                                "brooklyn chichen timewarp";
+            row-gap: 5px;
+            column-gap: 5px;
+            padding: 10px;
+         
+            /* IMAGENES HOME GRID*/
+            .brasil{
+                grid-area: brasil;
+                background-image: url("../resources/brasil.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .playagrande {
+                grid-area: playagrande;
+                background-image: url("../resources/playaverde.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05 , 1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .nuevayork{
+                grid-area: nuevayork;
+                background-image: url("../resources/nueva-york.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .cenote{
+                grid-area: cenote;
+                background-image: url("../resources/cenotecancun.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .mexico{
+                grid-area: mexico;
+                background-image: url("../resources/mexico.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .centralpark{
+                grid-area: centralpark;
+                background-image: url("../resources/nyc3.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .brooklyn{
+                grid-area: brooklyn;
+                background-image: url("../resources/nyc2.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .chichen{
+                grid-area: chichen;
+                background-image: url("../resources/cancun-turism.jpeg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+
+            .timewarp{
+                grid-area: timewarp;
+                background-image: url("../resources/timewarp.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: #e4b269 solid 3px;
+                transition: all 2s;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition: all 2s;
+                }
+            }
+        }
+
+        
+        &__titulopais { /* título país  */
+            font-weight: bold;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: rgb(6, 100, 29);
+            padding: 20px 20px 00px 10px;
+            margin-left: 40px;
+        }
+    
+        &__titulociudad { /* título ciudad */
+            background-color: #e4b269;
+            font-size: 30px;
+            font-weight: bold;
+            color:rgb(6, 100, 29);
+            padding: 10px 10px 10px 70px;
+            margin-top: 10px;
+        }
+        &__maps {
+            height: 400px;
+            width: 600px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        &__videoTW {
+            width: 600PX; 
+            height: 400px;
+            background-color: #e4b269;
+            padding: 20px 20px 20px 10px;
+            margin-top: 20px;
+        }
+        /* IMAGENES SECCION + TIP */
+        &__img-mediumtip {
+            display: flex;
+            flex-direction: column;
+            background-color: #e4b269;
+            width: 600px;
+            height: 300px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        /* TITULO FORMULARIO */
+        &__contacttitle {
+            background-color: #e4b269;
+            font-size: 30px;
+            font-weight: bold;
+            color:rgb(6, 100, 29);
+            padding: 10px 10px 10px 70px;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+.tipright { /* TIP VIAJE DERECHA */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Secciones del main */
+section {
+    overflow: hidden;
+
+    .section{
+        .mapanyc{
+            margin-top: 20px;
+            padding:10px;
+            width: 950px;
+            height: 250px;
+        }    
+        .carousel__altura {
+            width: 500px;
+            height: 900px;
+        }
+    }
+}
+
+
+p { /* TEXTOS DESCRIPTIVOS E INFO */
+    font-size: 19px;
+    width: 600px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    padding: 30px;
+
+    .p {
+        .p__derechos { /* TEXTOS DESCRIPTIVOS E INFO */
+            font-size: 20px;
+            width: 400px;
+            word-spacing: 1px;
+            line-height: 10px;
+            text-align: left;
+            padding: 5px
+        }
+    }
+}
+
+
+/* COMIENZO DE ARTICULOS TIP  */
+.article {
+    &__tip {  /* BLOQUE DE ARTICULO */
+        width: 500px;
+        background-color: #e4b269;
+        margin: 30px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title { /* TITULO DE ARTICULO */
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: underline;
+        color:rgb(6, 100, 29);
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    &__imgtip{ /* IMAGEN DE ARTICULO TIP */
+        background-color: rgb(247, 222, 156);
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    &__parrafo { /* TEXTO DE ARTICULO TIP */
+        font-size: 17px;
+        width: 420px;
+        word-spacing: 1px;
+        line-height: 20px;
+        text-align: left;
+        padding: 20px 20px 20px 20px;
+    }
+
+    &__maps {
+        height: 400px;
+        width: 400px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__parrafonyc { /* TEXTO DE ARTICULO TIP */
+        display: flex;
+        font-size: 17px;
+        width: 450px;
+        word-spacing: 1px;
+        line-height: 20px;
+        text-align: left;
+        padding: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    /* FORMULARIO */
+    &__forum {
+        width: 550px;
+        background-color: #e4b269;
+        margin: 50px;
+        padding: 20px;
+    }
+}
+
+.forum__subtitle {
+    font-size: 20px;
+    width: 500px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 30px 10px 20px 0px
+}
+
+.button{ 
+    &_place{
+        display: flex;
+        justify-content: center;
+    }
+
+    &_forum{
+        width: 500px;
+        margin: 10px;
+    }
+}

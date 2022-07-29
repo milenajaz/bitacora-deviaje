@@ -1,638 +1,137 @@
-*{
-    margin: 0px;
-    padding:0px; 
-}
-
-/*  INICIO HEADER */
-.header {
-    background-color: rgb(253, 233, 173);
-}
-
-/* logo y titulo HEADER  */
-
-.header__section {
-    display: flex;
-    justify-content: center;
-}
-
-.header__logo {  /* posicionar en el centro */
-    height: 140px;
-    display: inline;
-
-}
-
-.header__logo:hover{
-    transform: rotate(10deg);
-    transition: all 5s;
-}
-
-.header__title { /* encabezado, posicionar en el centro */
-    font-family: 'Sacramento', cursive;
-    font-size: 90px;
-    color:#06641d;
-    display: inline;
-    margin-top: 20px;
-}
-
-.header__title:hover{
-    transform: translate(0px,15px);
-    transition: all 2s;
-}
-
-.header__subtitle { /* subtitulo, posicionar en el centro*/
-    font-family: 'Sacramento', cursive;
-    font-size: 30px;
-    color:#06641d;
-    padding: 100px 0px 0px 0px;
-}
-
-/*  NAVEGACION  */
-
-.header__navegacion { /* navegacion + lista + item   */
-    border: 1px solid #06641d;
-    background-color: #e4b269;
-    padding: 1px;
-}
-
-/* .header__lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style:none; */
-/*     margin-left: 300px;
-    margin-right: 300px; */
-
-
-.header__item { /* lista menú */
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    padding: 5px 10px;
-}
-
-/* COLOR VÍNCULOS  */
-a{
-    color: #06641d;
-    text-decoration:none
-}
-a:hover{
-    color: #06641d
-}
-a:active{
-    color: #06641d
-}
-a:visited{
-    color: #06641d
-}
-
-/* INICIO DEL MAIN */
-main {
-    font-family: 'Rubik', sans-serif;
-    background-color: rgb(253, 233, 173);
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* BLOQUE HOME */
-.main__index {   /* productos grid */
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:"brasil nuevayork mexico"
-                        "brasil playagrande mexico"
-                        "centralpark playagrande cenote"
-                        "brooklyn chichen timewarp"
-                        "brooklyn chichen timewarp";
-    row-gap: 5px;
-    column-gap: 5px;
-    padding: 10px;
-}
-
-/* IMAGENES HOME GRID*/
-
-.brasil{
-    grid-area: brasil;
-    background-image: url("../resources/brasil.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.brasil:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-.playagrande {
-    grid-area: playagrande;
-    background-image: url("../resources/playaverde.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.playagrande:hover{
-    transform: scale(1.05 , 1.05);
-    transition: all 2s;
-}
-
-.nuevayork{
-    grid-area: nuevayork;
-    background-image: url("../resources/nueva-york.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.nuevayork:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-.cenote{
-    grid-area: cenote;
-    background-image: url("../resources/cenotecancun.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.cenote:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-.mexico{
-    grid-area: mexico;
-    background-image: url("../resources/mexico.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.mexico:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-.centralpark{
-    grid-area: centralpark;
-    background-image: url("../resources/nyc3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.centralpark:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-
-.brooklyn{
-    grid-area: brooklyn;
-    background-image: url("../resources/nyc2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.brooklyn:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-.chichen{
-    grid-area: chichen;
-    background-image: url("../resources/cancun-turism.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-}
-
-.chichen:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-.timewarp{
-    grid-area: timewarp;
-    background-image: url("../resources/timewarp.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #e4b269 solid 3px;
-    transition: all 2s;
-}
-
-.timewarp:hover{
-    transform: scale(1.05,1.05);
-    transition: all 2s;
-}
-
-
-.main__titulopais { /* título país  */
-    font-weight: bold;
-    font-size: 40px;
-    text-transform: uppercase;
-    color: rgb(6, 100, 29);
-    padding: 20px 20px 00px 10px;
-    margin-left: 40px;
-}
-
-.main__titulociudad { /* título ciudad */
-    background-color: #e4b269;
-    font-size: 30px;
-    font-weight: bold;
-    color:rgb(6, 100, 29);
-    padding: 10px 10px 10px 70px;
-    margin-top: 10px;
-}
-
-/* Secciones del main */
-section {
-    overflow: hidden;
-}
-
-
-p { /* TEXTOS DESCRIPTIVOS E INFO */
-    font-size: 19px;
-    width: 500px;
-    word-spacing: 1px;
-    line-height: 20px;
-    text-align: left;
-    padding: 20px 20px 20px 20px;
-}
-
-p { /* TEXTOS DESCRIPTIVOS E INFO */
-    font-size: 19px;
-    width: 600px;
-    word-spacing: 1px;
-    line-height: 20px;
-    text-align: center;
-    padding: 30px
-}
-
-.main__maps {
-    height: 400px;
-    width: 600px;
-    padding: 20px 20px 20px 20px;
-    margin-bottom: 30px;
-}
-
-.main__videoTW {
-    width: 600PX; 
-    height: 400px;
-    background-color: #e4b269;
-    padding: 20px 20px 20px 10px;
-    margin-top: 20px;
-}
-
-/* INICIO SECCION CON IMAGEN + TIP  */
-
-/* TIP VIAJE DERECHA */
-.tipright {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
-/* IMAGENES SECCION + TIP */
-.main__img-mediumtip {
-    display: flex;
-    flex-direction: column;
-    background-color: #e4b269;
-    width: 600px;
-    height: 300px;
-    padding: 20px;
-    margin-top: 30px;
-    margin-left: 10px;
-}
-
-
-.main__maps {
-    height: 400px;
-    width: 600px;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.main__videoTW {
-    width: 600PX; 
-    height: 400px;
-    background-color: #e4b269;
-    padding: 20px 20px 20px 10px;
-    margin-top: 20px;
-}
-
-/* COMIENZO DE ARTICULOS TIP  */
-
-.article__tip {  /* BLOQUE DE ARTICULO */
-    width: 500px;
-    background-color: #e4b269;
-    margin: 30px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-.article__title { /* TITULO DE ARTICULO */
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: underline;
-    color:rgb(6, 100, 29);
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.article__imgtip{ /* IMAGEN DE ARTICULO TIP */
-    background-color: rgb(247, 222, 156);
-    width: 400px;
-    height: 300px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.article__parrafo { /* TEXTO DE ARTICULO TIP */
-    font-size: 17px;
-    width: 420px;
-    word-spacing: 1px;
-    line-height: 20px;
-    text-align: left;
-    padding: 20px 20px 20px 20px;
-}
-
-.article__maps {
-    height: 400px;
-    width: 400px;
-    padding: 10px;
-    margin-bottom: 30px;
-}
-
-/* TITULO FORMULARIO */
-.main__contacttitle {
-    background-color: #e4b269;
-    font-size: 30px;
-    font-weight: bold;
-    color:rgb(6, 100, 29);
-    padding: 10px 10px 10px 70px;
-    margin-top: 20px;
-}
-
-/* FORMULARIO */
-.article__forum {
-    width: 550px;
-    background-color: #e4b269;
-    margin: 50px;
-    padding: 20px;
-}
-
-.forum__subtitle {
-    font-size: 20px;
-    width: 500px;
-    word-spacing: 1px;
-    line-height: 20px;
-    text-align: left;
-    padding: 30px 10px 20px 0px
-}
-
-.boton_forum{
-    display: flex;
-    justify-content: center;
-}
-
-.button_forum{
-    width: 500px;
-    margin: 10px;
-}
-
-.carousel__altura {
-    width: 500px;
-    height: 900px;
-}
-
-.article__parrafonyc { /* TEXTO DE ARTICULO TIP */
-    display: flex;
-    font-size: 17px;
-    width: 450px;
-    word-spacing: 1px;
-    line-height: 20px;
-    text-align: left;
-    padding: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.mapanyc{
-    margin-top: 20px;
-    padding:10px;
-    width: 950px;
-    height: 250px;
-}
-
-
-/*  COMIENZO DEL FOOTER */
+@charset "UTF-8";
 footer {
-    font-family: 'Rubik', sans-serif;
-    background-color: #e4b269;
-    border: 1px solid #06641d;
-}
+  font-family: 'Rubik', sans-serif;
+  background-color: #e4b269;
+  border: 1px solid #06641d; }
+  footer .footer {
+    /* SECCIONES DEL FOOTER  */ }
+    footer .footer__title {
+      color: #06641d;
+      padding: 15px;
+      font-size: 25px;
+      width: 300px;
+      height: 40px; }
+    footer .footer__redsocial {
+      height: 70px;
+      font-size: 30px;
+      padding: 5px;
+      /* LOGO REDES */ }
+      footer .footer__redsocial__redes {
+        width: 60px;
+        height: 40px;
+        padding: 0px 5px 5px 0px; }
+    footer .footer__derechos {
+      display: flex;
+      padding: 10px; }
 
-.footer__title {
-    color:#06641d;
-    padding: 15px;
-    font-size: 25px;
-    width: 300px;
-    height: 40px;
-}
-
-/* SECCIONES DEL FOOTER  */
-.footer__redsocial {
-    height: 50px;
-    font-size: 30px;
-    padding: 5px;
-}
-
-/* LOGO REDES */
-.footer__redes {
-    width: 60px;
-    height: 40px;
-    padding: 0px 5px 5px 0px;
-}
-
-.footer__contacto {
-    height: 40px;
-    padding: 10px 5px 10px 0px;
-}
-
-.footer__derechos {
+@media (min-width: 320px) and (max-width: 575px) {
+  __logo {
+    height: 0px; }
+  __title {
+    /* encabezado, posicionar en el centro */
+    font-size: 50px;
     display: flex;
-    padding: 10px;
-}
-
-.parrafo_derechos { /* TEXTOS DESCRIPTIVOS E INFO */
-    font-size: 20px;
-    width: 400px;
-    word-spacing: 1px;
-    line-height: 10px;
-    text-align: left;
-    padding: 5px
-}
-
-/* MEDIA DE CELULAR */
-@media (min-width: 320px) and (max-width: 575px){
-    .header__logo {  
-        height: 0px;
-    }
-
-    .header__title { /* encabezado, posicionar en el centro */
-        font-size: 50px;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .header__subtitle { /* subtitulo, posicionar en el centro*/
+    justify-content: center;
+    margin-top: 20px; }
+  __subtitle {
+    /* subtitulo, posicionar en el centro*/
     display: flex;
     justify-content: center;
     font-size: 30px;
-    padding: 20px 0px 0px 0px;
-    }
-    
-    .header__lista {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 0;
-    }
-    
-    .header__item { /* lista menú */
-        font-size: 20px;
-        padding: 3px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .header__navegacion{
-        display: flex;
-        justify-content: center;
-    }
-    .header__section{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .main__index {   /* productos grid */
-        height: 1500px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-areas:"brasil"
-                            "nuevayork" 
-                            "mexico"
-                            "playagrande"
-                            "centralpark"
-                            "cenote"
-                            "brooklyn" 
-                            "chichen" 
-                            "timewarp";
-}
-
-.main__titulopais { /* título país  */
+    padding: 20px 0px 0px 0px; }
+  __lista {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0; }
+  __item {
+    /* lista menú */
+    font-size: 20px;
+    padding: 3px;
+    display: flex;
+    justify-content: center; }
+  __navegacion {
+    display: flex;
+    justify-content: center; }
+  __section {
+    flex-direction: column;
+    justify-content: center; }
+  .main__index {
+    /* productos grid */
+    height: 1500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "brasil" "nuevayork"  "mexico" "playagrande" "centralpark" "cenote" "brooklyn"  "chichen"  "timewarp"; }
+  .main__titulopais {
+    /* título país  */
     font-size: 30px;
     padding: 10px;
-    margin-left: 20px;
-}
-
-.main__titulociudad { /* título ciudad */
+    margin-left: 20px; }
+  .main__titulociudad {
+    /* título ciudad */
     font-size: 20px;
-    padding: 10px 10px 10px 30px;
-}
-
-p { /* TEXTOS DESCRIPTIVOS E INFO */
+    padding: 10px 10px 10px 30px; }
+  p {
+    /* TEXTOS DESCRIPTIVOS E INFO */
     font-size: 15px;
     width: 300px;
     word-spacing: 1px;
     line-height: 20px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
-    
-}
-
-.main__img-mediumtip {
+    margin: 10px; }
+  .main__img-mediumtip {
     display: flex;
     justify-content: center;
     width: 300px;
     height: 200px;
     padding: 10px;
-    margin-left: 10px;
-}
-
-.main__maps {
+    margin-left: 10px; }
+  .main__maps {
     height: 300px;
     width: 320px;
-    padding: 10px;
-}
-
-.article__tip {  /* BLOQUE DE ARTICULO */
+    padding: 10px; }
+  .article__tip {
+    /* BLOQUE DE ARTICULO */
     width: 320px;
     margin: 20px;
     padding: 10px;
     display: flex;
-    flex-direction: center;
-}
-
-.article__imgtip{ /* IMAGEN DE ARTICULO TIP */
+    flex-direction: center; }
+  .article__imgtip {
+    /* IMAGEN DE ARTICULO TIP */
     display: flex;
     justify-content: center;
     width: 280px;
     height: 200px;
     padding: 10px;
-    margin-top: 20px;
-}
-
-.article__parrafo { /* TEXTO DE ARTICULO TIP */
+    margin-top: 20px; }
+  .article__parrafo {
+    /* TEXTO DE ARTICULO TIP */
     font-size: 15px;
     width: 280px;
     word-spacing: 1px;
     line-height: 20px;
     text-align: left;
-    padding: 10px;
-}
-
-.article__maps {
+    padding: 10px; }
+  .article__maps {
     height: 200px;
     width: 290px;
     padding: 10px;
-    margin-bottom: 30px;
-}
-
-/* FORMULARIO */
-.article__forum {
+    margin-bottom: 30px; }
+  /* FORMULARIO */
+  .article__forum {
     width: 100%;
     margin: 10px;
-    padding: 15px;
-}
-
-.forum__subtitle {
+    padding: 15px; }
+  .forum__subtitle {
     font-size: 20px;
     width: 350px;
     word-spacing: 1px;
     line-height: 20px;
     text-align: center;
-    padding: 10px 10px 10px 0px;
-}
-
-.article__parrafonyc { /* TEXTO DE ARTICULO TIP */
+    padding: 10px 10px 10px 0px; }
+  .article__parrafonyc {
+    /* TEXTO DE ARTICULO TIP */
     display: flex;
     font-size: 17px;
     width: 450px;
@@ -642,104 +141,401 @@ p { /* TEXTOS DESCRIPTIVOS E INFO */
     padding: 20px;
     margin-top: 20px;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.mapanyc{
+    justify-content: center; }
+  .mapanyc {
     margin-top: 20px;
-    padding:10px;
+    padding: 10px;
     width: 200px;
-    height: 300px;
-}
-
-.main__contacttitle {
+    height: 300px; }
+  .main__contacttitle {
     font-size: 20px;
     padding: 10px 10px 10px 10px;
-    margin-top: 20px;
-}
-
-/* * SECCIONES DEL FOOTER  */
-footer{
+    margin-top: 20px; }
+  /* * SECCIONES DEL FOOTER  */
+  footer {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-}
-
-.footer__redsocial {
+    justify-content: flex-start; }
+  .footer__redsocial {
     height: 55px;
     display: flex;
-    justify-content: center;
-}
-
-.footer__title {
+    justify-content: center; }
+  .footer__title {
     display: flex;
     justify-content: center;
     padding: 5px;
     font-size: 20px;
     width: 100vw;
-    height: 40px;
-}
-
-/* LOGO REDES */
-.footer__redes {
+    height: 40px; }
+  /* LOGO REDES */
+  .footer__redes {
     display: flex;
     justify-content: center;
     width: 40px;
     padding: 5px;
-    margin-left: 15px;
-}
-
-.footer__contacto {
+    margin-left: 15px; }
+  .footer__contacto {
     width: 100vw;
     height: 40px;
-    padding: 5px;
-}
-
-.footer__derechos {
+    padding: 5px; }
+  .footer__derechos {
     display: flex;
-    justify-content:center;
-    width: 100vw;
-}
-
-.parrafo_derechos { /* TEXTOS DESCRIPTIVOS E INFO */
+    justify-content: center;
+    width: 100vw; }
+  .parrafo_derechos {
+    /* TEXTOS DESCRIPTIVOS E INFO */
     font-size: 10px;
     width: 250px;
     height: 20px;
     word-spacing: 1px;
     line-height: 10px;
     padding: 1px;
-    margin: 1px;
-}
+    margin: 1px; }
+  /*  media querie TABLA */ }
 
-/*  media querie TABLA */
-@media (min-width: 576px) and (max-width: 992px){
-    .header__logo {  /* posicionar en el centro */
-        height: 0px;
-    }
-
-    .main__index {   /* productos grid */
-        height: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:"brasil nuevayork mexico"
-                            "playagrande centralpark cenote"
-                            "brooklyn chichen timewarp";
-    }
-/* FORMULARIO */
-.article__forum {
+@media (min-width: 320px) and (max-width: 575px) and (min-width: 576px) and (max-width: 992px) {
+  __logo {
+    /* posicionar en el centro */
+    height: 0px; }
+  .main__index {
+    /* productos grid */
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "brasil nuevayork mexico" "playagrande centralpark cenote" "brooklyn chichen timewarp"; }
+  /* FORMULARIO */
+  .article__forum {
     width: 550px;
     background-color: #e4b269;
     margin: 50px;
-    padding: 20px;
-}
-
-.forum__subtitle {
+    padding: 20px; }
+  .forum__subtitle {
     font-size: 20px;
     width: 500px;
     word-spacing: 1px;
     line-height: 20px;
     text-align: left;
-    padding: 30px 10px 20px 0px
-}
-}
-}
+    padding: 30px 10px 20px 0px; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*  INICIO HEADER */
+header {
+  background-color: #fde9ad; }
+  header .header {
+    /* logo y titulo HEADER  */
+    /*  NAVEGACION  */ }
+    header .header__section {
+      display: flex;
+      justify-content: center; }
+    header .header__logo {
+      height: 140px;
+      display: inline; }
+    header .header__logo:hover {
+      transform: rotate(10deg);
+      transition: all 5s; }
+    header .header__title {
+      /* encabezado, posicionar en el centro */
+      font-family: 'Sacramento', cursive;
+      font-size: 90px;
+      color: #06641d;
+      display: inline;
+      margin-top: 20px; }
+    header .header__title:hover {
+      transform: translate(0px, 15px);
+      transition: all 2s; }
+    header .header__subtitle {
+      /* subtitulo, posicionar en el centro*/
+      font-family: 'Sacramento', cursive;
+      font-size: 30px;
+      color: #06641d;
+      padding: 100px 0px 0px 0px; }
+    header .header__navegacion {
+      /* navegacion + lista + item   */
+      border: 1px solid #06641d;
+      background-color: #e4b269;
+      padding: 1px; }
+    header .header__item {
+      /* lista menú */
+      font-family: 'Rubik', sans-serif;
+      font-size: 20px;
+      padding: 5px 10px; }
+
+/* COLOR VÍNCULOS  */
+a {
+  color: #06641d; }
+  a text-decoration:none
+.a:hover {
+    color: #06641d; }
+  a text-decoration:none
+.a:active {
+    color: #06641d; }
+  a text-decoration:none
+.a:visited {
+    color: #06641d; }
+
+/* INICIO DEL MAIN */
+main {
+  font-family: 'Rubik', sans-serif;
+  background-color: #fde9ad;
+  width: 100%;
+  overflow-x: hidden; }
+  main .main {
+    /* BLOQUE HOME */
+    /* IMAGENES SECCION + TIP */
+    /* TITULO FORMULARIO */ }
+    main .main__index {
+      /* productos grid */
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "brasil nuevayork mexico" "brasil playagrande mexico" "centralpark playagrande cenote" "brooklyn chichen timewarp" "brooklyn chichen timewarp";
+      row-gap: 5px;
+      column-gap: 5px;
+      padding: 10px;
+      /* IMAGENES HOME GRID*/ }
+      main .main__index .brasil {
+        grid-area: brasil;
+        background-image: url("../resources/brasil.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .brasil:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .playagrande {
+        grid-area: playagrande;
+        background-image: url("../resources/playaverde.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .playagrande:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .nuevayork {
+        grid-area: nuevayork;
+        background-image: url("../resources/nueva-york.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .nuevayork:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .cenote {
+        grid-area: cenote;
+        background-image: url("../resources/cenotecancun.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .cenote:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .mexico {
+        grid-area: mexico;
+        background-image: url("../resources/mexico.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .mexico:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .centralpark {
+        grid-area: centralpark;
+        background-image: url("../resources/nyc3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .centralpark:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .brooklyn {
+        grid-area: brooklyn;
+        background-image: url("../resources/nyc2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .brooklyn:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .chichen {
+        grid-area: chichen;
+        background-image: url("../resources/cancun-turism.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px; }
+        main .main__index .chichen:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+      main .main__index .timewarp {
+        grid-area: timewarp;
+        background-image: url("../resources/timewarp.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #e4b269 solid 3px;
+        transition: all 2s; }
+        main .main__index .timewarp:hover {
+          transform: scale(1.05, 1.05);
+          transition: all 2s; }
+    main .main__titulopais {
+      /* título país  */
+      font-weight: bold;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #06641d;
+      padding: 20px 20px 00px 10px;
+      margin-left: 40px; }
+    main .main__titulociudad {
+      /* título ciudad */
+      background-color: #e4b269;
+      font-size: 30px;
+      font-weight: bold;
+      color: #06641d;
+      padding: 10px 10px 10px 70px;
+      margin-top: 10px; }
+    main .main__maps {
+      height: 400px;
+      width: 600px;
+      padding: 20px;
+      margin-bottom: 30px; }
+    main .main__videoTW {
+      width: 600PX;
+      height: 400px;
+      background-color: #e4b269;
+      padding: 20px 20px 20px 10px;
+      margin-top: 20px; }
+    main .main__img-mediumtip {
+      display: flex;
+      flex-direction: column;
+      background-color: #e4b269;
+      width: 600px;
+      height: 300px;
+      padding: 20px;
+      margin-top: 30px;
+      margin-left: 10px; }
+    main .main__contacttitle {
+      background-color: #e4b269;
+      font-size: 30px;
+      font-weight: bold;
+      color: #06641d;
+      padding: 10px 10px 10px 70px;
+      margin-top: 20px; }
+
+.tipright {
+  /* TIP VIAJE DERECHA */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+/* Secciones del main */
+section {
+  overflow: hidden; }
+  section .section .mapanyc {
+    margin-top: 20px;
+    padding: 10px;
+    width: 950px;
+    height: 250px; }
+  section .section .carousel__altura {
+    width: 500px;
+    height: 900px; }
+
+p {
+  /* TEXTOS DESCRIPTIVOS E INFO */
+  font-size: 19px;
+  width: 600px;
+  word-spacing: 1px;
+  line-height: 20px;
+  text-align: center;
+  padding: 30px; }
+  p .p .p__derechos {
+    /* TEXTOS DESCRIPTIVOS E INFO */
+    font-size: 20px;
+    width: 400px;
+    word-spacing: 1px;
+    line-height: 10px;
+    text-align: left;
+    padding: 5px; }
+
+/* COMIENZO DE ARTICULOS TIP  */
+.article {
+  /* FORMULARIO */ }
+  .article__tip {
+    /* BLOQUE DE ARTICULO */
+    width: 500px;
+    background-color: #e4b269;
+    margin: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column; }
+  .article__title {
+    /* TITULO DE ARTICULO */
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #06641d;
+    padding: 10px;
+    margin-top: 10px; }
+  .article__imgtip {
+    /* IMAGEN DE ARTICULO TIP */
+    background-color: #f7de9c;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px; }
+  .article__parrafo {
+    /* TEXTO DE ARTICULO TIP */
+    font-size: 17px;
+    width: 420px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px 20px 20px 20px; }
+  .article__maps {
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 30px; }
+  .article__parrafonyc {
+    /* TEXTO DE ARTICULO TIP */
+    display: flex;
+    font-size: 17px;
+    width: 450px;
+    word-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; }
+  .article__forum {
+    width: 550px;
+    background-color: #e4b269;
+    margin: 50px;
+    padding: 20px; }
+
+.forum__subtitle {
+  font-size: 20px;
+  width: 500px;
+  word-spacing: 1px;
+  line-height: 20px;
+  text-align: left;
+  padding: 30px 10px 20px 0px; }
+
+.button_place {
+  display: flex;
+  justify-content: center; }
+
+.button_forum {
+  width: 500px;
+  margin: 10px; }

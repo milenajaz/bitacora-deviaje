@@ -1,0 +1,35 @@
+footer {
+    font-family: 'Rubik', sans-serif;
+    background-color: #e4b269;
+    border: 1px solid #06641d;
+
+    .footer {
+        &__title {
+            color:#06641d;
+            padding: 15px;
+            font-size: 25px;
+            width: 300px;
+            height: 40px;
+        }
+
+            /* SECCIONES DEL FOOTER  */
+        &__redsocial {
+            height: 70px;
+            font-size: 30px;
+            padding: 5px;
+        
+
+            /* LOGO REDES */
+            &__redes {
+                width: 60px;
+                height: 40px;
+                padding: 0px 5px 5px 0px;
+            }
+        }
+
+        &__derechos {
+            display: flex;
+            padding: 10px;
+        }
+    }
+}
