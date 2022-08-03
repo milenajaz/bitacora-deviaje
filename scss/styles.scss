@@ -1,5 +1,6 @@
 @import "variables";
 @import "footer";
+@import "operators";
 @import "mediaqueries";
 
 
@@ -113,10 +114,7 @@ main {
             .brasil{
                 grid-area: brasil;
                 background-image: url("../resources/brasil.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -126,10 +124,7 @@ main {
             .playagrande {
                 grid-area: playagrande;
                 background-image: url("../resources/playaverde.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05 , 1.05);
                     transition: all 2s;
@@ -139,10 +134,7 @@ main {
             .nuevayork{
                 grid-area: nuevayork;
                 background-image: url("../resources/nueva-york.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -152,10 +144,7 @@ main {
             .cenote{
                 grid-area: cenote;
                 background-image: url("../resources/cenotecancun.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -165,10 +154,7 @@ main {
             .mexico{
                 grid-area: mexico;
                 background-image: url("../resources/mexico.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -178,10 +164,7 @@ main {
             .centralpark{
                 grid-area: centralpark;
                 background-image: url("../resources/nyc3.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -191,10 +174,7 @@ main {
             .brooklyn{
                 grid-area: brooklyn;
                 background-image: url("../resources/nyc2.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -204,10 +184,7 @@ main {
             .chichen{
                 grid-area: chichen;
                 background-image: url("../resources/cancun-turism.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
@@ -217,11 +194,7 @@ main {
             .timewarp{
                 grid-area: timewarp;
                 background-image: url("../resources/timewarp.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: #e4b269 solid 3px;
-                transition: all 2s;
+                @extend .background-centrado;
                 &:hover{
                     transform: scale(1.05,1.05);
                     transition: all 2s;
