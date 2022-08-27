@@ -1,7 +1,6 @@
-@media (min-width: 320px) and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 575px) {
 .header__logo {  /* posicionar en el centro */
     height: 0px;
-
 }
 
 .header__title { /* encabezado, posicionar en el centro */
@@ -221,23 +220,24 @@ footer{
     padding: 1px;
     margin: 1px;
 }
+}
 
 /*  media querie TABLA */
 @media (min-width: 576px) and (max-width: 992px){
-    .header{
-        &__logo {  /* posicionar en el centro */
-            height: 0px;
-        }
 
-        .main__index {   /* productos grid */
-            height: auto;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:"brasil nuevayork mexico"
-                                "playagrande centralpark cenote"
-                                "brooklyn chichen timewarp";
-        }
-    }
+.header__logo {  /* posicionar en el centro */
+        height: 0px;
+}
+        
+.main__index {   /* productos grid */
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"brasil nuevayork mexico"
+                        "playagrande centralpark cenote"
+                        "brooklyn chichen timewarp";
+}
+    
 /* FORMULARIO */
 .article__forum {
     width: 550px;
@@ -253,6 +253,5 @@ footer{
     line-height: 20px;
     text-align: left;
     padding: 30px 10px 20px 0px
-}
 }
 }
