@@ -1,28 +1,29 @@
 @charset "UTF-8";
 footer {
+  height: 100%;
   font-family: 'Rubik', sans-serif;
-  background-color: #e4b269;
+  background-color: #f1b05a;
   border: 1px solid #06641d; }
-  footer .footer {
-    /* SECCIONES DEL FOOTER  */ }
-    footer .footer__title {
-      color: #06641d;
-      padding: 15px;
-      font-size: 25px;
-      width: 300px;
-      height: 40px; }
-    footer .footer__redsocial {
-      height: 70px;
-      font-size: 30px;
-      padding: 5px;
-      /* LOGO REDES */ }
-      footer .footer__redsocial__redes {
-        width: 60px;
-        height: 40px;
-        padding: 0px 5px 5px 0px; }
-    footer .footer__derechos {
-      display: flex;
-      padding: 10px; }
+  footer .footer__title {
+    color: #06641d;
+    text-align: center;
+    padding: 10px; }
+  footer .footer__grupo-1 {
+    display: flex;
+    justify-content: center; }
+  footer .footer__redes {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    margin: 10px; }
+  footer .footer__grupo-2 {
+    padding: 5px;
+    margin: 10px;
+    color: #06641d;
+    display: flex;
+    justify-content: center; }
 
 /* EXTEND EN CODIGO */
 .background-centrado, main .main__index .brasil, main .main__index .playagrande, main .main__index .nuevayork, main .main__index .cenote, main .main__index .mexico, main .main__index .centralpark, main .main__index .brooklyn, main .main__index .chichen, main .main__index .timewarp {
@@ -32,34 +33,35 @@ footer {
   border: #e4b269 solid 1px; }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  __logo {
+  .header__logo {
+    /* posicionar en el centro */
     height: 0px; }
-  __title {
+  .header__title {
     /* encabezado, posicionar en el centro */
     font-size: 50px;
     display: flex;
     justify-content: center;
     margin-top: 20px; }
-  __subtitle {
+  .header__subtitle {
     /* subtitulo, posicionar en el centro*/
     display: flex;
     justify-content: center;
     font-size: 30px;
     padding: 20px 0px 0px 0px; }
-  __lista {
+  .header__lista {
     display: flex;
     flex-direction: column;
     flex-grow: 0; }
-  __item {
+  .header__item {
     /* lista menú */
     font-size: 20px;
     padding: 3px;
     display: flex;
     justify-content: center; }
-  __navegacion {
+  .header__navegacion {
     display: flex;
     justify-content: center; }
-  __section {
+  .header__section {
     flex-direction: column;
     justify-content: center; }
   .main__index {
@@ -89,8 +91,8 @@ footer {
   .main__img-mediumtip {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 200px;
+    width: 100px;
+    height: 50px;
     padding: 10px;
     margin-left: 10px; }
   .main__maps {
@@ -201,10 +203,10 @@ footer {
   /*  media querie TABLA */ }
 
 @media (min-width: 320px) and (max-width: 575px) and (min-width: 576px) and (max-width: 992px) {
-  __logo {
+  .header__logo {
     /* posicionar en el centro */
     height: 0px; }
-  .main__index {
+  .header .main__index {
     /* productos grid */
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -230,7 +232,7 @@ footer {
 
 /*  INICIO HEADER */
 header {
-  background-color: #fde9ad; }
+  background-color: #fae4a4; }
   header .header {
     /* logo y titulo HEADER  */
     /*  NAVEGACION  */ }
@@ -283,7 +285,7 @@ a {
 /* INICIO DEL MAIN */
 main {
   font-family: 'Rubik', sans-serif;
-  background-color: #fde9ad;
+  background-color: #fae4a4;
   width: 100%;
   overflow-x: hidden; }
   main .main {
@@ -411,11 +413,11 @@ section {
   section .section .mapanyc {
     margin-top: 20px;
     padding: 10px;
-    width: 950px;
+    width: 1000px;
     height: 250px; }
   section .section .carousel__altura {
-    width: 500px;
-    height: 900px; }
+    width: 300px;
+    height: 500px; }
 
 p {
   /* TEXTOS DESCRIPTIVOS E INFO */
