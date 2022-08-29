@@ -69,7 +69,15 @@ footer {
     height: 1500px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "brasil" "nuevayork"  "mexico" "playagrande" "centralpark" "cenote" "brooklyn"  "chichen"  "timewarp"; }
+    grid-template-areas: "brasil"
+ "nuevayork" 
+ "mexico"
+ "playagrande"
+ "centralpark"
+ "cenote"
+ "brooklyn" 
+ "chichen" 
+ "timewarp"; }
   .main__titulopais {
     /* título país  */
     font-size: 30px;
@@ -211,7 +219,9 @@ footer {
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "brasil nuevayork mexico" "playagrande centralpark cenote" "brooklyn chichen timewarp"; }
+    grid-template-areas: "brasil nuevayork mexico"
+ "playagrande centralpark cenote"
+ "brooklyn chichen timewarp"; }
   /* FORMULARIO */
   .article__forum {
     width: 550px;
@@ -298,7 +308,11 @@ main {
       height: 100vh;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "brasil nuevayork mexico" "brasil playagrande mexico" "centralpark playagrande cenote" "brooklyn chichen timewarp" "brooklyn chichen timewarp";
+      grid-template-areas: "brasil nuevayork mexico"
+ "brasil playagrande mexico"
+ "centralpark playagrande cenote"
+ "brooklyn chichen timewarp"
+ "brooklyn chichen timewarp";
       row-gap: 5px;
       column-gap: 5px;
       padding: 10px;
